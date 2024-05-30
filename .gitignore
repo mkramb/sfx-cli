@@ -1,0 +1,6 @@
+*.log
+dist/
+
+# local development 
+/sfx-cli
+.devbox
