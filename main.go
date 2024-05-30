@@ -115,7 +115,7 @@ func main() {
 	}
 
 	fmt.Print("Values for the last minute:\n")
-	fmt.Printf(" - avg value %f\n", valueSum/float64(valueCount))
-	fmt.Printf(" - max value %f\n", max)
-	fmt.Printf(" - min value %f\n", min)
+	fmt.Printf(" - avg: %f\n", valueSum/float64(valueCount))
+	fmt.Printf(" - max: %f\n", max)
+	fmt.Printf(" - min: %f\n", min)
 }
