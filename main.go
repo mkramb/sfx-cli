@@ -69,9 +69,6 @@ func main() {
 		Stop:    stop,
 	})
 
-	fmt.Printf("Start %v\n", start)
-	fmt.Printf("Stop %v\n", stop)
-
 	if err != nil {
 		panic("Problem executing query")
 	}
@@ -117,9 +114,8 @@ func main() {
 		log.Fatalf("computation error: %v", err)
 	}
 
-	fmt.Print("\n--------------------------------\n\n")
-
-	fmt.Printf("Returning min value %f\n", min)
-	fmt.Printf("Returning max value %f\n", max)
-	fmt.Printf("Returning avg value %f\n", valueSum/float64(valueCount))
+	fmt.Print("Values for the last minute:\n")
+	fmt.Printf(" - avg value %f\n", valueSum/float64(valueCount))
+	fmt.Printf(" - max value %f\n", max)
+	fmt.Printf(" - min value %f\n", min)
 }
